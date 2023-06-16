@@ -1,0 +1,407 @@
+cui,name
+C0008031,Pain chest
+C0392680,Shortness of breath
+C0012833,Dizziness
+C0004093,Asthenia
+C0085639,Fall
+C0039070,Syncope
+C0042571,Vertigo
+C0038990,Sweat
+C0700590,Sweating increased
+C0030252,Palpitation
+C0027497,Nausea
+C0002962,Angina pectoris
+C0438716,Pressure chest
+C0032617,Polyuria
+C0085602,Polydypsia
+C0085619,Orthopnea
+C0034642,Rale
+C0241526,Unresponsiveness
+C0856054,Mental status changes
+C0042963,Vomiting
+C0553668,Labored breathing
+C0424000,Feeling suicidal
+C0438696,Suicidal
+C0233762,Hallucinations auditory
+C0150041,Feeling hopeless
+C0424109,Weepiness
+C0917801,Sleeplessness
+C0424230,Motor retardation
+C0022107,Irritable mood
+C0312422,Blackout
+C0344315,Mood depressed
+C0233763,Hallucinations visual
+C0233481,Worry
+C0085631,Agitation
+C0040822,Tremor
+C0728899,Intoxication
+C0424068,Verbal auditory hallucinations
+C0455769,Energy increased
+C1299586,Difficulty
+C0028084,Nightmare
+C0235198,Unable to concentrate
+C0237154,Homelessness
+C0086439,Hypokinesia
+C0231807,Dyspnea on exertion
+C0232292,Chest tightness
+C0010200,Cough
+C0015967,Fever
+C0029053,Decreased translucency
+C0239134,Productive cough
+C0008033,Pleuritic pain
+C0457096,Yellow sputum
+C0238844,Breath sounds decreased
+C0085593,Chill
+C0035508,Rhonchus
+C0457097,Green sputum
+C0850149,Non-productive cough
+C0043144,Wheezing
+C0019079,Haemoptysis
+C0476273,Distress respiratory
+C0231835,Tachypnea
+C0231218,Malaise
+C0028081,Night sweat
+C0240100,Jugular venous distention
+C0013404,Dyspnea
+C0013362,Dysarthria
+C0234518,Speech slurred
+C0427055,Facial paresis
+C0018991,Hemiplegia
+C0036572,Seizure
+C0028643,Numbness
+C0436331,Symptom aggravating factors
+C0520886,St segment elevation
+C0520887,St segment depression
+C0520888,T wave inverted
+C1305739,Presence of q wave
+C0235710,Chest discomfort
+C0428977,Bradycardia
+C0030193,Pain
+C0337672,Nonsmoker
+C0041834,Erythema
+C0019214,Hepatosplenomegaly
+C0033774,Pruritus
+C0011991,Diarrhea
+C0549483,Abscess bacterial
+C0038999,Swelling
+C0277797,Apyrexial
+C0013428,Dysuria
+C0018965,Hematuria
+C0235634,Renal angle tenderness
+C0023380,Lethargy
+C0020625,Hyponatremia
+C0578150,Hemodynamically stable
+C0241705,Difficulty passing urine
+C0239110,Consciousness clear
+C0744492,Guaiac positive
+C0746619,Monoclonal
+C0013491,Ecchymosis
+C1269955,Tumor cell invasion
+C0019080,Haemorrhage
+C0030232,Pallor
+C0015672,Fatigue
+C0744740,Heme positive
+C0004604,Pain back
+C0149746,Orthostasis
+C0003862,Arthralgia
+C1096646,Transaminitis
+C0241235,Sputum purulent
+C0700292,Hypoxemia
+C0020440,Hypercapnia
+C0376405,Patient non compliance
+C0041657,Unconscious state
+C0425251,Bedridden
+C0741453,Bedridden
+C0232498,Abdominal tenderness
+C1273573,Unsteady gait
+C0020461,Hyperkalemia
+C0085606,Urgency of micturition
+C0003962,Ascites
+C0020649,Hypotension
+C0014394,Enuresis
+C0232766,Asterixis
+C0231530,Muscle twitch
+C0234450,Sleepy
+C0018681,Headache
+C0220870,Lightheadedness
+C0149696,Food intolerance
+C0239832,Numbness of hand
+C0858924,General discomfort
+C0013144,Drowsiness
+C0427008,Stiffness
+C0242453,Prostatism
+C0043094,Weight gain
+C0557875,Tired
+C0577559,Mass of body structure
+C0557075,Has religious belief
+C0027769,Nervousness
+C0016579,Formication
+C0600142,Hot flush
+C0221198,Lesion
+C0332601,Cushingoid facies
+C0878661,Cushingoid habitus
+C0743482,Emphysematous change
+C0043096,Decreased body weight
+C0019825,Hoarseness
+C0205400,Thicken
+C0233308,Spontaneous rupture of membranes
+C0026827,Muscle hypotonia
+C0241938,Hypotonic
+C0332575,Redness
+C0020580,Hypesthesia
+C0034880,Hyperacusis
+C1384489,Scratch marks
+C0234233,Sore to touch
+C0085624,Burning sensation
+C0239233,Satiety early
+C1444773,Throbbing sensation quality
+C0234215,Sensory discomfort
+C0009806,Constipation
+C0000737,Pain abdominal
+C0018834,Heartburn
+C0006157,Breech presentation
+C0010520,Cyanosis
+C0023222,Pain in lower limb
+C0018800,Cardiomegaly
+C0009024,Clonus
+C0857256,Unwell
+C0003123,Anorexia
+C0424533,History of - blackout
+C0003126,Anosmia
+C1513183,Metastatic lesion
+C0271202,Hemianopsia homonymous
+C0744727,Hematocrit decreased
+C0151315,Neck stiffness
+C0008767,Cicatrisation
+C0347938,Hypometabolism
+C0236018,Aura
+C0027066,Myoclonus
+C0232517,Gurgle
+C0558195,Wheelchair bound
+C0238705,Left atrial hypertrophy
+C0028961,Oliguria
+C0007398,Catatonia
+C0847488,Unhappy
+C0030554,Paresthesia
+C0232995,Gravida 0
+C0034079,Lung nodule
+C0000731,Distended abdomen
+C0234238,Ache
+C0558143,Macerated skin
+C0581912,Heavy feeling
+C0234253,Rest pain
+C0232201,Sinus rhythm
+C0424092,Withdraw
+C0424295,Behavior hyperactive
+C0558261,Terrify
+C0085635,Photopsia
+C0392701,Giddy mood
+C0578859,Disturbed family
+C0917799,Hypersomnia
+C0020458,Hyperhidrosis disorder
+C0026961,Mydriasis
+C0234133,Extrapyramidal sign
+C0240233,Loose associations
+C0392674,Exhaustion
+C0037384,Snore
+C0429091,R wave feature
+C0497406,Overweight
+C0232257,Systolic murmur
+C0231221,Asymptomatic
+C0038002,Splenomegaly
+C0151706,Bleeding of vagina
+C0332573,Macule
+C0085636,Photophobia
+C0221150,Painful swallowing
+C0006625,Cachexia
+C0020598,Hypocalcemia result
+C0020672,Hypothermia, natural
+C0741302,Atypia
+C0427108,General unsteadiness
+C0242429,Throat sore
+C1260880,Snuffle
+C0239133,Hacking cough
+C0038450,Stridor
+C0030552,Paresis
+C0221470,Aphagia
+C0751495,Focal seizures
+C0423571,Abnormal sensation
+C0085628,Stupor
+C0231890,Fremitus
+C0271276,Stahli's line
+C0677500,Stinging sensation
+C0522224,Paralyse
+C0019572,Hirsutism
+C0558361,Sniffle
+C0233565,Bradykinesia
+C0848168,Out of breath
+C0150045,Urge incontinence
+C0344232,Vision blurred
+C0848277,Room spinning
+C0423982,Rambling speech
+C0233844,Clumsiness
+C0278014,Decreased stool caliber
+C0018932,Hematochezia
+C0231872,Egophony
+C0241158,Scar tissue
+C0233647,Neologism
+C0231187,Decompensation
+C0241252,Stool color yellow
+C0424790,Rigor temperature-associated observation
+C0221166,Paraparesis
+C0554980,Moody
+C0877040,Fear of falling
+C0037763,Spasm
+C0020578,Hyperventilation
+C0278141,Excruciating pain
+C0016927,Gag
+C0872410,Posturing
+C0277899,Pulse absent
+C0392699,Dysesthesia
+C0521516,Polymyalgia
+C0848621,Passed stones
+C0151878,Qt interval prolonged
+C0004134,Ataxia
+C0018862,Heberden's node
+C0019209,Hepatomegaly
+C0036396,Sciatica
+C0577979,Frothy sputum
+C0024103,Mass in breast
+C0277845,Retropulsion
+C0239301,Estrogen use
+C0751229,Hypersomnolence
+C0041667,Underweight
+C1319518,Underweight
+C0541911,Dullness
+C0857199,Red blotches
+C0232488,Colic abdominal
+C0020621,Hypokalemia
+C0020175,Hunger
+C0240813,Prostate tender
+C0016512,Pain foot
+C0152032,Urinary hesitation
+C0281825,Disequilibrium
+C0016382,Flushing
+C0085632,Indifferent mood
+C1313921,Urinoma
+C0239981,Hypoalbuminemia
+C0241157,Pustule
+C0232854,Slowing of urinary stream
+C0277794,Extreme exhaustion
+C0442739,No status change
+C1135120,Breakthrough pain
+C0232258,Pansystolic murmur
+C0694547,Systolic ejection murmur
+C0848340,Stuffy nose
+C0234866,Barking cough
+C0425488,Rapid shallow breathing
+C0237304,Noisy respiration
+C0264273,Nasal discharge present
+C0871754,Frail
+C1511606,Cystic lesion
+C0221151,Projectile vomiting
+C0581911,Heavy legs
+C0231690,Titubation
+C0234979,Dysdiadochokinesia
+C1321756,Achalasia
+C0748706,Side pain
+C0085702,Monocytosis
+C0032781,Posterior rhinorrhea
+C0542044,Incoherent
+C0311395,Lameness
+C1456822,Claudication
+C0392162,Clammy skin
+C0264576,Mediastinal shift
+C0027498,Nausea and vomiting
+C0541798,Awakening early
+C0232726,Tenesmus
+C1167754,Fecaluria
+C0232894,Pneumatouria
+C0234544,Todd paralysis
+C0740880,Alcoholic withdrawal symptoms
+C0231528,Myalgia
+C1384606,Dyspareunia
+C0149758,Poor dentition
+C0857516,Floppy
+C0233467,Inappropriate affect
+C0576456,Poor feeding
+C0859032,Moan
+C0221232,Welt
+C0040264,Tinnitus
+C0020303,Hydropneumothorax
+C0429562,Superimposition
+C0235129,Feeling strange
+C0242143,Uncoordination
+C0424530,Absences finding
+C0270844,Tonic seizures
+C0742985,Debilitation
+C0338656,Impaired cognition
+C0013132,Drool
+C0235231,Pin-point pupils
+C0234379,Tremor resting
+C0541992,Groggy
+C0559546,Adverse reaction
+C0879626,Adverse effect
+C1291077,Abdominal bloating
+C0231230,Fatigability
+C0233071,Para 2
+C0156543,Abortion
+C0232943,Intermenstrual heavy bleeding
+C0232997,Previous pregnancies 2
+C0860096,Primigravida
+C0702118,Abnormally hard consistency
+C1405524,Proteinemia
+C0007859,Pain neck
+C0857087,Dizzy spells
+C0278146,Shooting pain
+C0235250,Hyperemesis
+C0443260,Milky
+C0232605,Regurgitates after swallowing
+C0542073,Lip smacking
+C0751466,Phonophobia
+C0522336,Rolling of eyes
+C0002416,Ambidexterity
+C0232118,Pulsus paradoxus
+C1291692,Gravida 10
+C0006318,Bruit
+C0476287,Breath-holding spell
+C0240962,Scleral icterus
+C0232602,Retch
+C0948786,Blanch
+C0233492,Elation
+C0558089,Verbally abusive behavior
+C0558141,Transsexual
+C0474395,Behavior showing increased motor activity
+C0520966,Coordination abnormal
+C0008301,Choke
+C0232695,Bowel sounds decreased
+C0262581,No known drug allergies
+C0024031,Low back pain
+C0277823,Charleyhorse
+C0205254,Sedentary
+C0424749,Feels hot/feverish
+C1517205,Flare
+C0232267,Pericardial friction rub
+C0424337,Hoard
+C0030318,Panic
+C0425560,Cardiovascular finding
+C1320716,Cardiovascular event
+C0037580,Soft tissue swelling
+C0427629,Rhd positive
+C0233070,Para 1
+C0277873,Nasal flaring
+C0037383,Sneeze
+C0235396,Hypertonicity
+C0277977,Murphy's sign
+C0016204,Flatulence
+C0425449,Gasping for breath
+C0474505,Feces in rectum
+C0240805,Prodrome
+C0020639,Hypoproteinemia
+C0556346,Alcohol binge episode
+C0000727,Abdomen acute
+C0740844,Air fluid level
+C0425491,Catching breath
+C0456091,Large-for-dates fetus
+C0231441,Immobile
+C0455204,Homicidal thoughts

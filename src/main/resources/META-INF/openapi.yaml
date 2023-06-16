@@ -1,0 +1,804 @@
+openapi: 3.0.3
+info:
+  title: doctor-autobot API
+  version: 1.0.0-SNAPSHOT
+paths:
+  /diagnosis/evaluate:
+    post:
+      tags:
+      - Diagnosis Resource
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DiagnosisRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiagnosisResponse'
+  /disease/all:
+    get:
+      tags:
+      - Disease Resource
+      parameters:
+      - name: pageNo
+        in: query
+        schema:
+          format: int32
+          default: 0
+          type: integer
+      - name: pageSize
+        in: query
+        schema:
+          format: int32
+          default: 10
+          type: integer
+      - name: sortBy
+        in: query
+        schema:
+          default: name
+          type: string
+      - name: sortDirection
+        in: query
+        schema:
+          default: asc
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiseaseResponse'
+  /disease/cui/{cui}:
+    get:
+      tags:
+      - Disease Resource
+      parameters:
+      - name: cui
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiseaseResponse'
+  /disease/delete/{id}:
+    delete:
+      tags:
+      - Disease Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /disease/save:
+    post:
+      tags:
+      - Disease Resource
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DiseaseRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiseaseResponse'
+  /disease/search:
+    get:
+      tags:
+      - Disease Resource
+      parameters:
+      - name: name
+        in: query
+        schema:
+          default: a
+          type: string
+      - name: pageNo
+        in: query
+        schema:
+          format: int32
+          default: 0
+          type: integer
+      - name: pageSize
+        in: query
+        schema:
+          format: int32
+          default: 10
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiseaseResponse'
+  /disease/update/{id}:
+    put:
+      tags:
+      - Disease Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DiseaseRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiseaseResponse'
+  /disease/{id}:
+    get:
+      tags:
+      - Disease Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiseaseResponse'
+  /medicine/all:
+    get:
+      tags:
+      - Medicine Resource
+      parameters:
+      - name: pageNo
+        in: query
+        schema:
+          format: int32
+          default: 0
+          type: integer
+      - name: pageSize
+        in: query
+        schema:
+          format: int32
+          default: 10
+          type: integer
+      - name: sortBy
+        in: query
+        schema:
+          default: name
+          type: string
+      - name: sortDirection
+        in: query
+        schema:
+          default: asc
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicineResponse'
+  /medicine/cui/{cui}:
+    get:
+      tags:
+      - Medicine Resource
+      parameters:
+      - name: cui
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicineResponse'
+  /medicine/delete/{id}:
+    delete:
+      tags:
+      - Medicine Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /medicine/save:
+    post:
+      tags:
+      - Medicine Resource
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MedicineRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicineResponse'
+  /medicine/search:
+    get:
+      tags:
+      - Medicine Resource
+      parameters:
+      - name: name
+        in: query
+        schema:
+          default: a
+          type: string
+      - name: pageNo
+        in: query
+        schema:
+          format: int32
+          default: 0
+          type: integer
+      - name: pageSize
+        in: query
+        schema:
+          format: int32
+          default: 10
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicineResponse'
+  /medicine/update/{id}:
+    put:
+      tags:
+      - Medicine Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MedicineRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicineResponse'
+  /medicine/{id}:
+    get:
+      tags:
+      - Medicine Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MedicineResponse'
+  /symptom/all:
+    get:
+      tags:
+      - Symptom Resource
+      parameters:
+      - name: pageNo
+        in: query
+        schema:
+          format: int32
+          default: 0
+          type: integer
+      - name: pageSize
+        in: query
+        schema:
+          format: int32
+          default: 10
+          type: integer
+      - name: sortBy
+        in: query
+        schema:
+          default: name
+          type: string
+      - name: sortDirection
+        in: query
+        schema:
+          default: asc
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SymptomResponse'
+  /symptom/cui/{cui}:
+    get:
+      tags:
+      - Symptom Resource
+      parameters:
+      - name: cui
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SymptomResponse'
+  /symptom/delete/{id}:
+    delete:
+      tags:
+      - Symptom Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /symptom/save:
+    post:
+      tags:
+      - Symptom Resource
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SymptomRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SymptomResponse'
+  /symptom/search:
+    get:
+      tags:
+      - Symptom Resource
+      parameters:
+      - name: name
+        in: query
+        schema:
+          default: a
+          type: string
+      - name: pageNo
+        in: query
+        schema:
+          format: int32
+          default: 0
+          type: integer
+      - name: pageSize
+        in: query
+        schema:
+          format: int32
+          default: 10
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SymptomResponse'
+  /symptom/update/{id}:
+    put:
+      tags:
+      - Symptom Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SymptomRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SymptomResponse'
+  /symptom/{id}:
+    get:
+      tags:
+      - Symptom Resource
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          format: int64
+          type: integer
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SymptomResponse'
+components:
+  schemas:
+    BaseResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        message:
+          type: string
+    DiagnosisObject:
+      type: object
+      properties:
+        symptoms:
+          type: array
+          items:
+            $ref: '#/components/schemas/DiagnosisVO'
+        minorDiseases:
+          type: array
+          items:
+            $ref: '#/components/schemas/DiagnosisVO'
+        majorDiseases:
+          type: array
+          items:
+            $ref: '#/components/schemas/DiagnosisVO'
+    DiagnosisRequest:
+      type: object
+      properties:
+        haveFever:
+          type: boolean
+          default: false
+        haveHeadache:
+          type: boolean
+          default: false
+        haveChill:
+          type: boolean
+          default: false
+        haveCough:
+          type: boolean
+          default: false
+        feelingTired:
+          type: boolean
+          default: false
+        feelingBodyWeakness:
+          type: boolean
+          default: false
+        haveFainted:
+          type: boolean
+          default: false
+        feelingDizziness:
+          type: boolean
+          default: false
+        haveVomiting:
+          type: boolean
+          default: false
+        haveDiarrhea:
+          type: boolean
+          default: false
+        haveNausea:
+          type: boolean
+          default: false
+        haveSweat:
+          type: boolean
+          default: false
+        havePainInChest:
+          type: boolean
+          default: false
+        havePain:
+          type: boolean
+          default: false
+        feelingShortnessOfBreath:
+          type: boolean
+          default: false
+        haveDifficultyBreathing:
+          type: boolean
+          default: false
+        haveRapidBreathing:
+          type: boolean
+          default: false
+        haveBreathingSound:
+          type: boolean
+          default: false
+        feelingUnresponsiveness:
+          type: boolean
+          default: false
+        feelingSuicidal:
+          type: boolean
+          default: false
+        feelingHopeless:
+          type: boolean
+          default: false
+        haveSleeplessness:
+          type: boolean
+          default: false
+        haveIrritableMood:
+          type: boolean
+          default: false
+        haveLossOfConsciousness:
+          type: boolean
+          default: false
+        feelingWorried:
+          type: boolean
+          default: false
+        feelingAgitated:
+          type: boolean
+          default: false
+        haveBodyShaking:
+          type: boolean
+          default: false
+        haveNightmare:
+          type: boolean
+          default: false
+        haveVisualHallucination:
+          type: boolean
+          default: false
+        haveAuditoryHallucinations:
+          type: boolean
+          default: false
+    DiagnosisResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        message:
+          type: string
+        diagnosis:
+          $ref: '#/components/schemas/DiagnosisObject'
+    DiagnosisVO:
+      type: object
+      properties:
+        cui:
+          type: string
+        name:
+          type: string
+        medicines:
+          type: array
+          items:
+            $ref: '#/components/schemas/DiagnosisVO'
+    DiseaseObject:
+      required:
+      - cui
+      - name
+      - createdBy
+      - updatedBy
+      type: object
+      properties:
+        id:
+          format: int64
+          type: integer
+        cui:
+          minLength: 1
+          type: string
+        name:
+          minLength: 1
+          type: string
+        semType1:
+          type: string
+        status:
+          $ref: '#/components/schemas/StatusType'
+        symptoms:
+          type: array
+          items:
+            $ref: '#/components/schemas/SymptomObject'
+        medicines:
+          type: array
+          items:
+            $ref: '#/components/schemas/MedicineObject'
+        version:
+          format: int64
+          type: integer
+          default: 1
+        createDate:
+          $ref: '#/components/schemas/LocalDateTime'
+        createdBy:
+          minLength: 1
+          type: string
+        updateDate:
+          $ref: '#/components/schemas/LocalDateTime'
+        updatedBy:
+          minLength: 1
+          type: string
+    DiseaseRequest:
+      type: object
+      properties:
+        disease:
+          $ref: '#/components/schemas/DiseaseObject'
+    DiseaseResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        message:
+          type: string
+        diseases:
+          type: array
+          items:
+            $ref: '#/components/schemas/DiseaseObject'
+    LocalDateTime:
+      format: date-time
+      type: string
+      example: 2022-03-10T12:15:50
+    MedicineObject:
+      required:
+      - cui
+      - name
+      - source
+      - createdBy
+      - updatedBy
+      type: object
+      properties:
+        id:
+          format: int64
+          type: integer
+        cui:
+          minLength: 1
+          type: string
+        name:
+          minLength: 1
+          type: string
+        source:
+          minLength: 1
+          type: string
+        semType1:
+          type: string
+        semType2:
+          type: string
+        semType3:
+          type: string
+        status:
+          $ref: '#/components/schemas/StatusType'
+        version:
+          format: int64
+          type: integer
+          default: 1
+        createDate:
+          $ref: '#/components/schemas/LocalDateTime'
+        createdBy:
+          minLength: 1
+          type: string
+        updateDate:
+          $ref: '#/components/schemas/LocalDateTime'
+        updatedBy:
+          minLength: 1
+          type: string
+    MedicineRequest:
+      type: object
+      properties:
+        medicine:
+          $ref: '#/components/schemas/MedicineObject'
+    MedicineResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        message:
+          type: string
+        medicines:
+          type: array
+          items:
+            $ref: '#/components/schemas/MedicineObject'
+    StatusType:
+      enum:
+      - Active
+      - Deleted
+      type: string
+    SymptomObject:
+      required:
+      - cui
+      - name
+      - createdBy
+      - updatedBy
+      type: object
+      properties:
+        id:
+          format: int64
+          type: integer
+        cui:
+          minLength: 1
+          type: string
+        name:
+          minLength: 1
+          type: string
+        status:
+          $ref: '#/components/schemas/StatusType'
+        version:
+          format: int64
+          type: integer
+          default: 1
+        createDate:
+          $ref: '#/components/schemas/LocalDateTime'
+        createdBy:
+          minLength: 1
+          type: string
+        updateDate:
+          $ref: '#/components/schemas/LocalDateTime'
+        updatedBy:
+          minLength: 1
+          type: string
+    SymptomRequest:
+      type: object
+      properties:
+        symptom:
+          $ref: '#/components/schemas/SymptomObject'
+    SymptomResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        message:
+          type: string
+        symptoms:
+          type: array
+          items:
+            $ref: '#/components/schemas/SymptomObject'
+  securitySchemes:
+    SecurityScheme:
+      type: http
+      description: Authentication
+      scheme: basic
