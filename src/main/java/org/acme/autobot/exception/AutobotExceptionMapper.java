@@ -62,7 +62,7 @@ public class AutobotExceptionMapper implements ExceptionMapper<Throwable> {
 
     private Response handleThrowable(Throwable e, String errorId) {
         log.error("Processing error occurred with errorId[{}]: ", errorId, e);
-        return Response.status(Response.Status.NOT_FOUND)
+        return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
                 .entity(new ErrorResponse(HttpResponseStatus.INTERNAL_SERVER_ERROR.reasonPhrase(), PROCESSING_ERROR_MSG, errorId))
                 .build();
     }

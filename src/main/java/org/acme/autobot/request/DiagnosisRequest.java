@@ -1,15 +1,8 @@
 package org.acme.autobot.request;
 
-import com.fasterxml.jackson.annotation.*;
-import io.vertx.core.cli.annotations.DefaultValue;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
 import lombok.Setter;
-import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
-import org.eclipse.microprofile.openapi.annotations.media.Content;
-import org.eclipse.microprofile.openapi.annotations.media.Schema;
-import org.eclipse.microprofile.openapi.annotations.media.SchemaProperty;
-import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
-import org.eclipse.microprofile.openapi.annotations.parameters.RequestBodySchema;
 
 /**
  * @author irfan.nagoo
@@ -20,7 +13,6 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBodySchema
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class DiagnosisRequest {
 
-    @Schema(defaultValue = "false")
     private boolean haveFever;
     private boolean haveHeadache;
     private boolean haveChill;

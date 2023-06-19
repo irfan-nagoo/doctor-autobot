@@ -1,20 +1,35 @@
 package org.acme.autobot.analyzer;
 
-import io.quarkus.test.junit.QuarkusTest;
-import io.quarkus.test.junit.mockito.InjectMock;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-@QuarkusTest
+import static org.junit.jupiter.api.Assertions.*;
+
 class DiseaseAnalyzerTest {
 
-    @InjectMock
-    private DiseaseAnalyzer diseaseAnalyzer;
+    DiseaseAnalyzer diseaseAnalyzer;
+
+    @BeforeEach
+    void setup() {
+        diseaseAnalyzer = new DiseaseAnalyzer();
+    }
+
 
     @Test
     void analyze() {
-        var input = List.of("dizziness", "shortness_of_breath", "pain_chest");
+        var input = List.of("C0008031", "C0392680", "C0012833");
         var output = diseaseAnalyzer.analyze(input);
+        assertFalse(output.isEmpty());
+        assertEquals("C0020538", output.get(0));
     }
+
+    @Test
+    void analyze_NoMatch() {
+        var input = List.of("C000001", "C000002", "C000003");
+        var output = diseaseAnalyzer.analyze(input);
+        assertTrue(output.isEmpty());
+    }
+
 }

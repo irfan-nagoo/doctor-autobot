@@ -102,7 +102,7 @@ public class SymptomResource {
     @PUT
     @Path("/update/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Uni<SymptomResponse> saveSymptom(@RestPath Long id, @Valid SymptomRequest symptomRequest) {
+    public Uni<SymptomResponse> updateSymptom(@RestPath Long id, @Valid SymptomRequest symptomRequest) {
         return symptomService.updateSymptom(id, symptomRequest);
     }
 

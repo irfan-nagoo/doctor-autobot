@@ -102,7 +102,7 @@ public class MedicineResource {
     @PUT
     @Path("/update/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Uni<MedicineResponse> saveMedicine(@RestPath Long id, @Valid MedicineRequest medicineRequest) {
+    public Uni<MedicineResponse> updateMedicine(@RestPath Long id, @Valid MedicineRequest medicineRequest) {
         return medicineService.updateMedicine(id, medicineRequest);
     }
 
